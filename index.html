@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <title>Todo</title>
 </head>
+
 <body>
+
     <nav id="navbar">
         <a href="" class="nav-brand">App</a>
         <ul>
@@ -17,48 +20,43 @@
     </nav>
 
     <div class="container" id="main">
-        <h1>My todo app</h1>
-        <p>List of task(s) i need to get done today.</p>
+        <h1>Todo list application</h1>
+        <p>
+            List of todo item to be accomplished will be display below.
+        </p>
 
-
-        <form action="" id="todo-form">
-            <label for="todo-title">Todo</label>
-            <input type="text" id="todo-title" placeholder="Enter your todo">
-
-            <select name="" id="todo-category">
+        <form id="todo-form">
+            <label for="todo-title">Enter task todo</label>
+            <input id="todo-title" type="text" placeholder="Enter your todo">
+            <select id="todo-category">
                 <option value="work">Work</option>
                 <option value="personal">Personal</option>
-                <option value="quran">Quran</option>
             </select>
-
-            <input type="submit" value="Add" class="btn btn-outline">
-
+            <input type="submit" class="btn btn-outline" value="Add" />
         </form>
-
-        <hr class="separator">
+        <hr class="separator" />
         <div>
             <label>
-                Filter
-                <select name="" id="todo-filter">
+                Filter:
+                <select id="todo-filter">
                     <option value="">Show all</option>
                     <option value="work">Work only</option>
-                    <option value="personal">Personal</option>
-                    <option value="quran">Quran</option>
+                    <option value="personal">Personal only</option>
                 </select>
             </label>
-
             <h3>Todos <span id="todo-count"></span></h3>
             <ul id="todo-list"></ul>
         </div>
     </div>
 
     <footer id="footer-wrapper">
-        <a href="about.html" target="_blank">About Us</a>
-        <a href="contact.html" target="_blank">Contact Us</a>
-
+        <a href="about.html" target="_blank">About us</a>
+        <a href="contact.html" target="_blank">Contact us</a>
     </footer>
 
-    <script src="C:\Users\Makeem\Desktop\todo\todos.js"></script>
+
+    <script type="module" src="/index.js"></script>
 
 </body>
+
 </html>
