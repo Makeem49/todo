@@ -10,8 +10,8 @@ let todoCount = document.querySelector('#todo-count')
 let task = new Todo()
 
 const render = (items, itemsCount) => {
-    count.textContent = `(${itemsCount})`;
-    list.innerHTML = items.map(todo => `<li>${todo.title} [${todo.category}]</li>`).join("");
+    todoCount.textContent = `(${itemsCount})`;
+    output.innerHTML = items.map(todo => `<li>${todo.title} [${todo.category}]</li>`).join("");
 }
 
 try {
@@ -30,6 +30,8 @@ add.addEventListener('submit', (event) => {
     } catch (error) {
         console.error()
     }
+
+    console.log(task.countTodo())
 
     input.value = ''
 
